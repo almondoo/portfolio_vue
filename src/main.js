@@ -3,12 +3,17 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+// import Vuetify from 'vuetify'
+import vuetify from './plugins/vuetify'
 
 Vue.config.productionTip = false
+
+// const vuetify = new Vuetify()
 
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
+  vuetify,
   router,
   components: {
     App
