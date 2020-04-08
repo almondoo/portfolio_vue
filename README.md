@@ -1,6 +1,6 @@
-# practice_vue
+# portfolio
 
-> A Vue.js project
+Vue.js project
 
 ## Build Setup
 
