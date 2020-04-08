@@ -1,18 +1,34 @@
 <template>
   <div id="app">
     <v-app>
-      <v-content>
+      <Header />
+      <v-content v-bind:class="classAppObject">
         <router-view />
       </v-content>
+      <Footer />
     </v-app>
   </div>
 </template>
 
 <script>
+import Header from './components/Header'
+import Footer from './components/Footer'
+
 export default {
   name: 'App',
   components: {
+    Header,
+    Footer
+  },
+  data: () => ({
 
+  }),
+  computed: {
+    classAppObject: () => {
+      return {
+        background: location.pathname === '/'
+      }
+    }
   }
 }
 </script>
@@ -20,10 +36,9 @@ export default {
 <style>
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+}
+
+.background {
+  background-image: url("./assets/background.jpg") !important ;
 }
 </style>
