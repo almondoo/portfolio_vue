@@ -61,10 +61,12 @@ const items = [
 const getCurrentURLFromTitle = () => {
   let path = location.pathname
   let base = process.env.ROOT_BASE
-  path = path.substr(1)
+  let num = 1
   if (base) {
+    num = 15
     path = base + path
   }
+  path = path.substr(num)
   let title
   if (path === '') {
     title = 'WELLCOME'
