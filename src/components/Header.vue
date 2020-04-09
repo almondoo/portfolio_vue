@@ -51,6 +51,10 @@ const items = [
   {
     title: 'CONTACT',
     url: '/contact'
+  },
+  {
+    title: 'NOT FOUND',
+    url: '/' + Math.random().toString(36).slice(-8)
   }
 ]
 
