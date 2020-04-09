@@ -67,6 +67,7 @@ const getCurrentURLFromTitle = () => {
     path = base + path
   }
   path = path.substr(num)
+  console.log(path)
   let title
   if (path === '') {
     title = 'WELLCOME'
