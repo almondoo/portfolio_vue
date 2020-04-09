@@ -60,14 +60,8 @@ const items = [
 
 const getCurrentURLFromTitle = () => {
   let path = location.pathname
-  let base = process.env.ROOT_BASE
-  let num = 1
-  if (base) {
-    num = 15
-    path = base + path
-  }
-  path = path.substr(num)
-  console.log(path)
+  path = path.replace('/portfolio_vue', '')
+  path = path.substr(1)
   let title
   if (path === '') {
     title = 'WELLCOME'
