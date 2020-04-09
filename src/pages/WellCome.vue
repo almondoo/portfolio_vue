@@ -1,5 +1,7 @@
 <template>
-  <div class="content">wellcome to portfolio</div>
+  <v-img class="img" :src="require('../assets/background.jpg')">
+    <div class="content">wellcome to portfolio</div>
+  </v-img>
 </template>
 
 <script>
@@ -23,6 +25,11 @@ export default {
   align-items: center;
   font-size: 5rem;
   color: white;
-  background-image: url("../assets/background.jpg");
+  z-index: 2;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
 }
 </style>
