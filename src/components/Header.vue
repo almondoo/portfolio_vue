@@ -62,7 +62,9 @@ const getCurrentURLFromTitle = () => {
   let path = location.pathname
   let base = process.env.ROOT_BASE
   path = path.substr(1)
-  console.log(base)
+  if (base) {
+    path = base + path
+  }
   let title
   if (path === '') {
     title = 'WELLCOME'
