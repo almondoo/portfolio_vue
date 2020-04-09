@@ -5,6 +5,7 @@ import Profile from '../pages/Profile'
 import Skill from '../pages/Skill'
 import Works from '../pages/Works'
 import Contact from '../pages/Contact'
+import NotFound from '../pages/NotFound'
 
 Vue.use(Router)
 
@@ -30,5 +31,11 @@ export default new Router({
     path: '/contact',
     name: 'contact',
     component: Contact
-  }]
+  }, {
+    path: '*',
+    name: 'notFound',
+    component: NotFound
+  }],
+
+  base: process.env.ROOT_BASE
 })

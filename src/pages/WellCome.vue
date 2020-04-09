@@ -1,5 +1,5 @@
 <template>
-  <v-container class="content">wellcome portfolio</v-container>
+  <div class="content">wellcome to portfolio</div>
 </template>
 
 <script>
@@ -23,5 +23,6 @@ export default {
   align-items: center;
   font-size: 5rem;
   color: white;
+  background-image: url("../assets/background.jpg");
 }
 </style>

@@ -8,7 +8,7 @@
     <v-navigation-drawer v-model="drawer" absolute temporary>
       <v-list-item>
         <v-list-item-avatar>
-          <img src="../assets/logo.png" />
+          <v-img :src="require('../assets/logo.png')"></v-img>
         </v-list-item-avatar>
 
         <v-list-item-content>
@@ -30,33 +30,68 @@
 </template>
 
 <script>
+
+const items = [
+  {
+    title: 'WELLCOME',
+    url: '/'
+  },
+  {
+    title: 'PROFILE',
+    url: '/profile'
+  },
+  {
+    title: 'SKILL',
+    url: '/skill'
+  },
+  {
+    title: 'WORKS',
+    url: '/works'
+  },
+  {
+    title: 'CONTACT',
+    url: '/contact'
+  }
+]
+
+const getCurrentURLFromTitle = () => {
+  let path = location.pathname
+  path = path.substr(1)
+  let title
+  if (path === '') {
+    title = 'WELLCOME'
+  } else {
+    title = 'NOT FOUND'
+    items.forEach(function (val) {
+      if (path === val.title.toLowerCase()) {
+        title = path.toUpperCase()
+      }
+    })
+  }
+
+  return title
+}
+
 export default {
   name: 'Header',
-  data: () => ({
-    drawer: null,
-    title: 'Titleが入る',
-    items: [
-      {
-        title: 'WELLCOME',
-        url: '/'
-      },
-      {
-        title: 'PROFILE',
-        url: '/profile'
-      },
-      {
-        title: 'SKILL',
-        url: '/skill'
-      },
-      {
-        title: 'WORKS',
-        url: '/works'
-      },
-      {
-        title: 'CONTACT',
-        url: '/contact'
+  data () {
+    return {
+      drawer: null,
+      title: '',
+      items: items
+    }
+  },
+  watch: {
+    '$route': function (to, from) {
+      if (to.path !== from.path) {
+        const title = getCurrentURLFromTitle()
+        this.title = title
       }
-    ]
-  })
+    }
+  },
+  created: function () {
+    const title = getCurrentURLFromTitle()
+    this.title = title
+  }
 }
 </script>

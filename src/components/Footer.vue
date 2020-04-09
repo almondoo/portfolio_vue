@@ -31,27 +31,28 @@
 <script>
 export default {
   name: 'Footer',
-  data: () => ({
-    icons: [
-      {
-        name: 'fab fa-facebook',
-        url: 'https://ja-jp.facebook.com/people/%E6%A3%AE%E5%B7%9D%E7%BF%BC/100017080203404'
-      },
-      {
-        name: 'fab fa-twitter',
-        url: 'https://twitter.com/5rAmLM8ozdUoM3W'
-      },
-      {
-        name: 'fab fa-instagram',
-        url: 'https://www.instagram.com/engineer_tsubasa/'
-      },
-      {
-        name: 'fab fa-github',
-        url: 'https://github.com/tsubasa111/'
-      }
-
-    ]
-  })
+  data () {
+    return {
+      icons: [
+        {
+          name: 'fab fa-facebook',
+          url: 'https://ja-jp.facebook.com/people/%E6%A3%AE%E5%B7%9D%E7%BF%BC/100017080203404'
+        },
+        {
+          name: 'fab fa-twitter',
+          url: 'https://twitter.com/5rAmLM8ozdUoM3W'
+        },
+        {
+          name: 'fab fa-instagram',
+          url: 'https://www.instagram.com/engineer_tsubasa/'
+        },
+        {
+          name: 'fab fa-github',
+          url: 'https://github.com/tsubasa111/'
+        }
+      ]
+    }
+  }
 }
 </script>
 

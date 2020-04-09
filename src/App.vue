@@ -2,7 +2,7 @@
   <div id="app">
     <v-app>
       <Header />
-      <v-content v-bind:class="classAppObject">
+      <v-content>
         <router-view />
       </v-content>
       <Footer />
@@ -20,14 +20,8 @@ export default {
     Header,
     Footer
   },
-  data: () => ({
-
-  }),
-  computed: {
-    classAppObject: () => {
-      return {
-        background: location.pathname === '/'
-      }
+  data () {
+    return {
     }
   }
 }
@@ -36,9 +30,5 @@ export default {
 <style>
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
-}
-
-.background {
-  background-image: url("./assets/background.jpg") !important ;
 }
 </style>
