@@ -37,5 +37,11 @@ export default new Router({
     component: NotFound
   }],
 
-  base: process.env.ROOT_BASE
+  base: process.env.ROOT_BASE,
+  scrollBehavior (to, from, savedPosition) {
+    return {
+      x: 0,
+      y: 0
+    }
+  }
 })
