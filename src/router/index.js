@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import WellCome from '../pages/WellCome'
+import WelCome from '../pages/WelCome'
 import Profile from '../pages/Profile'
 import Skill from '../pages/Skill'
 import Works from '../pages/Works'
@@ -13,8 +13,8 @@ export default new Router({
   mode: 'history',
   routes: [{
     path: '/',
-    name: 'wellcome',
-    component: WellCome
+    name: 'welcome',
+    component: WelCome
   }, {
     path: '/profile',
     name: 'profile',

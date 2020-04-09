@@ -33,7 +33,7 @@
 
 const items = [
   {
-    title: 'WELLCOME',
+    title: 'WELCOME',
     url: '/'
   },
   {
@@ -64,7 +64,7 @@ const getCurrentURLFromTitle = () => {
   path = path.substr(1)
   let title
   if (path === '') {
-    title = 'WELLCOME'
+    title = 'WELCOME'
   } else {
     title = 'NOT FOUND'
     items.forEach(function (val) {

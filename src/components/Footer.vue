@@ -2,7 +2,7 @@
   <v-footer dark padless>
     <v-card class="flex" flat tile>
       <v-card-title class="black">
-        <strong>other links! :D</strong>
+        <strong v-if="$vuetify.breakpoint.smAndUp">other links! :D</strong>
 
         <v-spacer></v-spacer>
 
@@ -19,11 +19,6 @@
           <v-icon size="24px" class="icon">{{ icon.name }}</v-icon>
         </v-btn>
       </v-card-title>
-
-      <!-- <v-card-text class="py-2 white--text text-center">
-        {{ new Date().getFullYear() }} —
-        <strong>PORTFOLIO</strong>
-      </v-card-text>-->
     </v-card>
   </v-footer>
 </template>

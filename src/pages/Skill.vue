@@ -24,11 +24,11 @@ export default {
         },
         {
           title: 'Javascript/jQuery/Vue.js',
-          answer: '生jsを始め、jQuery等を利用して動き・Apiを動かしています。Vue.jsは実務で使用していきたいと考えているので独学しています。'
+          answer: '生jsを始め、jQuery等を利用して動き・Apiを動かしています。Vue.jsは実務で使用していきたいと考えているので独学でやっています。'
         },
         {
           title: 'HTML/CSS',
-          answer: 'ほとんどの案件でバックとフロントを兼する場所が多かったので、使用頻度は高いです。cssに関してはscssで書くことが多いです。使用したことあるライブラリは、Vutifyのみです。'
+          answer: 'ほとんどの案件でバックとフロントを兼する場所が多かったので、使用頻度は高いです。cssに関してはscssで書くことが多いです。使用したことがあるライブラリは、Vutifyのみです。'
         },
         {
           title: 'MySQL',
