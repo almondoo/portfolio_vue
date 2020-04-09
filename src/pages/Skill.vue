@@ -19,36 +19,32 @@ export default {
     return {
       items: [
         {
-          title: 'Name',
-          answer: '森川 翼'
+          title: 'PHP/Laravel/FuelPHP',
+          answer: 'もっとも使用している言語です。LaravelとFuelphpのフレームワークは、現場で使用した経験があります。'
         },
         {
-          title: 'Birth Day',
-          answer: '1997年05月09日'
+          title: 'Javascript/jQuery/Vue.js',
+          answer: '生jsを始め、jQuery等を利用して動き・Apiを動かしています。Vue.jsは実務で使用していきたいと考えているので独学しています。'
         },
         {
-          title: 'Gender',
-          answer: '男性'
+          title: 'HTML/CSS',
+          answer: 'ほとんどの案件でバックとフロントを兼する場所が多かったので、使用頻度は高いです。cssに関してはscssで書くことが多いです。使用したことあるライブラリは、Vutifyのみです。'
         },
         {
-          title: 'Address',
-          answer: '東京'
+          title: 'MySQL',
+          answer: 'DBはMySQLのみ実務経験があります。基本コマンドは使えます。DB構築も経験したことがあります。'
         },
         {
-          title: 'Works',
-          answer: 'バックエンドエンジニア'
+          title: 'Redis',
+          answer: 'ある案件でページの高速化するために使用しました。こちら基本動作は使えます。'
         },
         {
-          title: 'Engineer Carrer',
-          answer: '2017年6月〜'
+          title: 'GCP/AWS',
+          answer: '案件で両方とも使用したことがあります。GCPは、サーバの作成からデプロイまでCLIで行っていました。AWSは、CloudWacth等のモニタリングで異常がないか確認程度でしか、利用したことがありません。'
         },
         {
-          title: 'Favorite',
-          answer: 'ランニング スマホゲーム プログラミング 音楽'
-        },
-        {
-          title: 'Goal',
-          answer: '自作サイトを立ち上げて、月間PV数100万'
+          title: 'バージョン管理ツール/Git/AWS(CodeCommit)',
+          answer: '2つのバージョン管理ツールを使用したことがあります。CLIでもGUI(SourceTree)でも使用できます。基本はGUIを使ってます。'
         }
       ]
     }

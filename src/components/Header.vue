@@ -1,11 +1,11 @@
 <template>
   <div>
-    <v-app-bar color="black" dense dark>
+    <v-app-bar color="black" dense dark fixed>
       <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
 
       <v-toolbar-title>{{ title }}</v-toolbar-title>
     </v-app-bar>
-    <v-navigation-drawer v-model="drawer" absolute temporary>
+    <v-navigation-drawer v-model="drawer" fixed temporary>
       <v-list-item>
         <v-list-item-avatar>
           <v-img :src="require('../assets/logo.png')"></v-img>
