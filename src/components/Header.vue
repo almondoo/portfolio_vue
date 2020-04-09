@@ -72,7 +72,7 @@ const getCurrentURLFromTitle = () => {
     title = 'NOT FOUND'
     items.forEach(function (val) {
       if (path === val.title.toLowerCase()) {
-        title = path.toUpperCase()
+        title = val.title
       }
     })
   }
