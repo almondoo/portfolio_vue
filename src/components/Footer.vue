@@ -31,19 +31,23 @@ export default {
       icons: [
         {
           name: 'fab fa-facebook',
-          url: 'https://ja-jp.facebook.com/people/%E6%A3%AE%E5%B7%9D%E7%BF%BC/100017080203404'
+          // url: 'https://ja-jp.facebook.com/people/%E6%A3%AE%E5%B7%9D%E7%BF%BC/100017080203404'
+          url: ''
         },
         {
           name: 'fab fa-twitter',
-          url: 'https://twitter.com/5rAmLM8ozdUoM3W'
+          // url: 'https://twitter.com/5rAmLM8ozdUoM3W'
+          url: ''
         },
         {
           name: 'fab fa-instagram',
-          url: 'https://www.instagram.com/engineer_tsubasa/'
+          // url: 'https://www.instagram.com/engineer_tsubasa/'
+          url: ''
         },
         {
           name: 'fab fa-github',
-          url: 'https://github.com/tsubasa111/'
+          // url: 'https://github.com/tsubasa111/'
+          url: ''
         }
       ]
     }
