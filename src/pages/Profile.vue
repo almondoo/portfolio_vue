@@ -25,7 +25,7 @@ export default {
         },
         {
           title: 'Birth Day',
-          answer: '1997年05月09日'
+          answer: '1997年'
         },
         {
           title: 'Gender',
