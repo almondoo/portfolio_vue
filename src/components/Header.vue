@@ -12,7 +12,7 @@
         </v-list-item-avatar>
 
         <v-list-item-content>
-          <v-list-item-title>Tsubasa Morikawa</v-list-item-title>
+          <v-list-item-title>T M</v-list-item-title>
         </v-list-item-content>
       </v-list-item>
 
