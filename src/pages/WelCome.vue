@@ -32,7 +32,7 @@ export default {
 }
 
 .img {
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 88vh; // 無理やり合わせてる
 }
 </style>
