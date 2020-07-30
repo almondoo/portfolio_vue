@@ -1,10 +1,10 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import WelCome from '../pages/WelCome'
-// import Profile from '../pages/Profile'
+import Profile from '../pages/Profile'
 import Skill from '../pages/Skill'
 import Works from '../pages/Works'
-// import Contact from '../pages/Contact'
+import Contact from '../pages/Contact'
 import NotFound from '../pages/NotFound'
 
 Vue.use(Router)
@@ -15,10 +15,10 @@ export default new Router({
     path: '/',
     name: 'welcome',
     component: WelCome
-    // }, {
-    //   path: '/profile',
-    //   name: 'profile',
-    //   component: Profile
+  }, {
+    path: '/profile',
+    name: 'profile',
+    component: Profile
   }, {
     path: '/skill',
     name: 'skill',
@@ -27,10 +27,10 @@ export default new Router({
     path: '/works',
     name: 'works',
     component: Works
-    // }, {
-    //   path: '/contact',
-    //   name: 'contact',
-    //   component: Contact
+  }, {
+    path: '/contact',
+    name: 'contact',
+    component: Contact
   }, {
     path: '*',
     name: 'notFound',

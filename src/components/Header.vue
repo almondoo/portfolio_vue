@@ -36,10 +36,10 @@ const items = [
     title: 'WELCOME',
     url: '/'
   },
-  // {
-  //   title: 'PROFILE',
-  //   url: '/profile'
-  // },
+  {
+    title: 'PROFILE',
+    url: '/profile'
+  },
   {
     title: 'SKILL',
     url: '/skill'
@@ -48,10 +48,10 @@ const items = [
     title: 'WORKS',
     url: '/works'
   },
-  // {
-  //   title: 'CONTACT',
-  //   url: '/contact'
-  // },
+  {
+    title: 'CONTACT',
+    url: '/contact'
+  },
   {
     title: 'NOT FOUND',
     url: '/' + Math.random().toString(36).slice(-8)
