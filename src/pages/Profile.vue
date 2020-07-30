@@ -21,7 +21,7 @@ export default {
       items: [
         {
           title: 'Name',
-          answer: '森川 翼'
+          answer: 'T M'
         },
         {
           title: 'Birth Day',
