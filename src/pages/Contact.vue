@@ -1,11 +1,11 @@
 <template>
   <v-container>
-    <v-expansion-panels class="mx-auto panel_main" focusable>
+    <v-expansion-panels class="mx-auto panel_main">
       <v-expansion-panel>
-        <v-expansion-panel-header>{{ item.title }}</v-expansion-panel-header>
-        <a :href="'mailto:' + item.content">
-          <v-expansion-panel-content class="pt-4">{{ item.content }}</v-expansion-panel-content>
-        </a>
+        <v-expansion-panel-title>{{ item.title }}</v-expansion-panel-title>
+        <v-expansion-panel-text>
+          <a :href="'mailto:' + item.content" class="pt-4">{{ item.content }}</a>
+        </v-expansion-panel-text>
       </v-expansion-panel>
     </v-expansion-panels>
   </v-container>
@@ -14,7 +14,7 @@
 <script>
 export default {
   name: 'contact',
-  data () {
+  data() {
     return {
       item: {
         title: 'Contact',

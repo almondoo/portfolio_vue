@@ -1,7 +1,7 @@
 <template>
   <div class="notfound_content">
     <div class="card">
-      <v-img class="img" :src="require('../assets/logo.png')" />
+      <v-img class="img" :src="logoImage" />
       <h1>Not Found</h1>
       <p>ページが存在しません</p>
     </div>
@@ -9,11 +9,13 @@
 </template>
 
 <script>
+import logoImage from '../assets/logo.png'
+
 export default {
   name: 'notFound',
-  data () {
+  data() {
     return {
-
+      logoImage: logoImage
     }
   }
 }

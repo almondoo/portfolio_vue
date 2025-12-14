@@ -2,21 +2,21 @@
   <v-container>
     <v-list>
       <v-list-item v-for="item in items" :key="item.title">
-        <card v-bind="{item}" />
+        <card v-bind="{ item }" />
       </v-list-item>
     </v-list>
   </v-container>
 </template>
 
 <script>
-import Card from '../components/card/Profile'
+import Card from '../components/card/Profile.vue'
 
 export default {
   name: 'profile',
   components: {
     card: Card
   },
-  data () {
+  data() {
     return {
       items: [
         {
@@ -56,6 +56,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-</style>

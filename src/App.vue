@@ -2,27 +2,23 @@
   <div id="app">
     <v-app>
       <Header />
-      <v-content class="mt-12">
+      <v-main class="mt-12">
         <router-view />
-      </v-content>
+      </v-main>
       <Footer />
     </v-app>
   </div>
 </template>
 
 <script>
-import Header from './components/Header'
-import Footer from './components/Footer'
+import Header from './components/Header.vue'
+import Footer from './components/Footer.vue'
 
 export default {
   name: 'App',
   components: {
     Header,
     Footer
-  },
-  data () {
-    return {
-    }
   }
 }
 </script>

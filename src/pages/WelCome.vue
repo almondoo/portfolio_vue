@@ -1,21 +1,22 @@
 <template>
-  <v-img class="img" :src="require('../assets/background.jpg')">
+  <v-img class="img" :src="backgroundImage">
     <div class="content">welcome to portfolio</div>
   </v-img>
 </template>
 
 <script>
+import backgroundImage from '../assets/background.jpg'
+
 export default {
   name: 'welcome',
-  data () {
+  data() {
     return {
-
+      backgroundImage: backgroundImage
     }
   }
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 .content {
   width: 100%;
@@ -33,6 +34,6 @@ export default {
 
 .img {
   width: 100vw;
-  height: 88vh; // 無理やり合わせてる
+  height: 88vh;
 }
 </style>
