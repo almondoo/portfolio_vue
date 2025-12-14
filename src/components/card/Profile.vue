@@ -1,15 +1,11 @@
 <template>
   <v-container>
     <v-card class="mx-auto" max-width="400" elevation="12">
-      <v-list-item class="grey">
-        <v-list-item-content>
-          <v-list-item-title class="headline">{{ item.title }}</v-list-item-title>
-        </v-list-item-content>
+      <v-list-item class="bg-grey">
+        <v-list-item-title class="text-h6">{{ item.title }}</v-list-item-title>
       </v-list-item>
       <v-list-item>
-        <v-list-item-content>
-          <v-list-item-content>{{ item.answer }}</v-list-item-content>
-        </v-list-item-content>
+        <v-list-item-title>{{ item.answer }}</v-list-item-title>
       </v-list-item>
     </v-card>
   </v-container>
@@ -18,12 +14,6 @@
 <script>
 export default {
   name: 'cardProfile',
-  props: ['item'],
-  data: () => ({
-
-  })
+  props: ['item']
 }
 </script>
-
-<style scoped>
-</style>

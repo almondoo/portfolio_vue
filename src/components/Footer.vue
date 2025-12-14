@@ -1,32 +1,32 @@
 <template>
-  <v-footer dark padless>
-    <v-card class="flex" flat tile>
-      <v-card-title class="black">
-        <strong v-if="$vuetify.breakpoint.smAndUp">other links! :D</strong>
-
-        <v-spacer></v-spacer>
-
+  <v-footer class="bg-black">
+    <v-row no-gutters align="center">
+      <v-col cols="auto" class="d-none d-sm-flex">
+        <strong class="text-white">other links! :D</strong>
+      </v-col>
+      <v-spacer></v-spacer>
+      <v-col cols="auto">
         <v-btn
           v-for="icon in icons"
           :key="icon.name"
-          class="mx-4"
+          class="mx-2"
           :href="icon.url"
-          dark
           icon
+          variant="text"
           target="_blank"
           rel="noopener"
         >
-          <v-icon size="24px" class="icon">{{ icon.name }}</v-icon>
+          <v-icon size="24" color="white">{{ icon.name }}</v-icon>
         </v-btn>
-      </v-card-title>
-    </v-card>
+      </v-col>
+    </v-row>
   </v-footer>
 </template>
 
 <script>
 export default {
   name: 'Footer',
-  data () {
+  data() {
     return {
       icons: [
         {
@@ -50,6 +50,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-</style>

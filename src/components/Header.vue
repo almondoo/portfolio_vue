@@ -1,28 +1,31 @@
 <template>
   <div>
-    <v-app-bar color="black" dense dark fixed>
+    <v-app-bar color="black" density="compact" flat>
       <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
-
       <v-toolbar-title>{{ title }}</v-toolbar-title>
     </v-app-bar>
-    <v-navigation-drawer v-model="drawer" fixed temporary>
+    <v-navigation-drawer v-model="drawer" temporary>
       <v-list-item>
-        <v-list-item-avatar>
-          <v-img :src="require('../assets/logo.png')"></v-img>
-        </v-list-item-avatar>
-
-        <v-list-item-content>
-          <v-list-item-title>T M</v-list-item-title>
-        </v-list-item-content>
+        <template v-slot:prepend>
+          <v-avatar>
+            <v-img :src="logoImage"></v-img>
+          </v-avatar>
+        </template>
+        <v-list-item-title>T M</v-list-item-title>
       </v-list-item>
 
       <v-divider></v-divider>
 
-      <v-list dense>
-        <v-list-item v-for="item in items" :key="item.title" :to="item.url">
-          <v-list-item-icon>
-            <v-icon>{{ item.title }}</v-icon>
-          </v-list-item-icon>
+      <v-list density="compact" nav>
+        <v-list-item
+          v-for="item in items"
+          :key="item.title"
+          :to="item.url"
+          :title="item.title"
+        >
+          <template v-slot:prepend>
+            <v-icon>mdi-menu</v-icon>
+          </template>
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
@@ -30,6 +33,7 @@
 </template>
 
 <script>
+import logoImage from '../assets/logo.png'
 
 const items = [
   {
@@ -79,11 +83,12 @@ const getCurrentURLFromTitle = () => {
 
 export default {
   name: 'Header',
-  data () {
+  data() {
     return {
       drawer: null,
       title: '',
-      items: items
+      items: items,
+      logoImage: logoImage
     }
   },
   watch: {
@@ -94,7 +99,7 @@ export default {
       }
     }
   },
-  created: function () {
+  created() {
     const title = getCurrentURLFromTitle()
     this.title = title
   }

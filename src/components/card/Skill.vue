@@ -2,7 +2,7 @@
   <v-container>
     <v-card class="mx-auto slideInRight" max-width="400">
       <v-card-title>{{ item.title }}</v-card-title>
-      <v-card-text class="grey--text text--darken-3">{{item.answer}}</v-card-text>
+      <v-card-text class="text-grey-darken-3">{{ item.answer }}</v-card-text>
     </v-card>
   </v-container>
 </template>
@@ -10,11 +10,7 @@
 <script>
 export default {
   name: 'cardSkill',
-  props: ['item'],
-  data () {
-    return {
-    }
-  }
+  props: ['item']
 }
 </script>
 
